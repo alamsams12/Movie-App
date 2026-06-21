@@ -59,7 +59,7 @@ const handleSearch =async (e)=>{
             {error && <div className='error-message'>{error}</div>}
 
             {loading? (<div className='loading'>Loading...</div>) :
-                (<div className="movies-gird">
+                (<div className="movies-grid">
                 {movies.map((movie) =>(             //imp
                 <MovieCard movie={movie} key={movie.id}/>))}
             
